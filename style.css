@@ -13,6 +13,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 figure,
 blockquote,
@@ -90,6 +92,20 @@ body {
     padding: 30px 80px;
 }
 
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: .9rem;
+}
+
+p {font-size: 1rem;
+}
 
 
 
@@ -236,7 +252,6 @@ body {
 .projects {
     grid-column: 1 / 2;
     grid-row: 1 / end;
-    padding: 10px;
 }
 
 .project_grid {
@@ -256,10 +271,6 @@ body {
     border-radius: 5px;
 }
 
-.projects h5 {
-    font-size: .9rem;
-    line-height: .5;
-}
 
 .card_icons {
     max-width: 100px;
@@ -270,14 +281,35 @@ body {
     padding: 30px 0 10px 0;
 }
 
+.annoucement {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.annoucement:nth-child(2) {
+    border-top: 1px solid grey;
+    border-bottom:1px solid grey;
+}
+
+.annoucements h4, .trending h4 {
+    padding-bottom: 15px;
+}
+
 .annoucements_card, .trending_card {
     background-color: white;
     padding: 0 15px 15px 15px;
+    border-radius: 5px;
+    display: grid;
     /*box-shadow: 0 3px 10px #202020 ;*/
 }
 
-.trending h4{
+.annoucements_card h4{
     padding-top: 15px;
+}
+
+.trending {
+    align-self: end;
 }
 
 .trending_item {
