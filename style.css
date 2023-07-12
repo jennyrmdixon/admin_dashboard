@@ -107,7 +107,9 @@ h6 {
 p {font-size: 1rem;
 }
 
-
+.header_bottomnav button:hover,  .sidebar_nav li:hover, .card_icons img:hover, .annoucement:hover, .trending_item:hover, .header_topnav > *:hover,  form > button > img:hover{
+    opacity: .75;
+ }
 
  /*Sidebar*/
 
@@ -116,6 +118,7 @@ p {font-size: 1rem;
     grid-column: 1/2;
     grid-row: 1/end;
     color: white;
+    box-shadow: 5px 5px 5px rgba(121, 122, 126, 0.411);
 }
 
 .sidebar_section2 {
@@ -139,7 +142,7 @@ p {font-size: 1rem;
   }
  
  .sidebar_nav li {
-    margin-left: -20px;
+     margin-left: -20px;
      display: grid;
      grid-template-columns: 40px 80px;
      padding-bottom: 20px;
@@ -147,6 +150,7 @@ p {font-size: 1rem;
      justify-items: left;
      gap: 10px;
      font-size: 1.2rem;
+     font-weight: bold;
  }
  
 
@@ -234,7 +238,10 @@ p {font-size: 1rem;
     border-radius: 30px;
 }
 
+
+
 .header_bottomnav button a {
+    font-weight: bold;
     color:white;
     text-decoration: none;
 }
@@ -246,7 +253,7 @@ p {font-size: 1rem;
     grid-column: 2/end;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 450px 450px;
+    grid-template-rows: 421px 421px;
 }
 
 .projects {
@@ -269,6 +276,7 @@ p {font-size: 1rem;
     display: grid;
     border-left: 5px var(--blue) solid;
     border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(121, 122, 126, 0.411);
 }
 
 
@@ -298,10 +306,10 @@ p {font-size: 1rem;
 
 .annoucements_card, .trending_card {
     background-color: white;
-    padding: 0 15px 15px 15px;
+    padding: 0 20px 20px 20px;
     border-radius: 5px;
     display: grid;
-    /*box-shadow: 0 3px 10px #202020 ;*/
+    box-shadow: 5px 5px 5px rgba(121, 122, 126, 0.411);
 }
 
 .annoucements_card h4{
@@ -314,8 +322,9 @@ p {font-size: 1rem;
 
 .trending_item {
     display: grid;
-    grid-template-columns: 40px 150px;
-    padding: 20px 0;
+    grid-template-columns: 45px 150px;
+    gap: 5px;
+    padding: 15px 0;
 }
 
 .footer {
