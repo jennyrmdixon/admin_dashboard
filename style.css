@@ -4,7 +4,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -20,37 +20,37 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+    margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
-  list-style: none;
+    list-style: none;
 }
 
 /* Set core root defaults */
 html:focus-within {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -58,24 +58,24 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 
 
 /*End Reset Code*/
 
+/*Full Page*/
+
 :root {
---darkgrey: #202020;
---lightgrey: #ededed;
---orange: #f09214;
---blue: #3158a7;
---lightblue: #c4dcea;
+    --darkgrey: #202020;
+    --lightgrey: #ededed;
+    --blue: #3158a7;
+    --lightblue: #c4dcea;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif
 }
-
 
 .page-content {
     display: grid;
@@ -104,14 +104,15 @@ h6 {
     font-size: .9rem;
 }
 
-p {font-size: 1rem;
+p {
+    font-size: 1rem;
 }
 
-.header_bottomnav button:hover,  .sidebar_nav li:hover, .card_icons img:hover, .annoucement:hover, .trending_item:hover, .header_topnav > *:hover,  form > button > img:hover{
+.header_bottomnav button:hover, .sidebar_nav li:hover, .card_icons img:hover, .annoucement:hover, .trending_item:hover, .header_topnav>*:hover, form>button>img:hover {
     opacity: .75;
- }
+}
 
- /*Sidebar*/
+/*Sidebar*/
 
 .sidebar {
     background-color: var(--darkgrey);
@@ -131,32 +132,32 @@ p {font-size: 1rem;
     gap: 10px;
     font-size: 1.4rem;
     font-weight: bold;
- }
- 
- .sidebar_header > * {
-     align-self: center;
-  }
- 
-  .sidebar_nav {
-     padding-top: 15px;
-  }
- 
- .sidebar_nav li {
-     margin-left: -20px;
-     display: grid;
-     grid-template-columns: 40px 80px;
-     padding-bottom: 20px;
-     align-items: center;
-     justify-items: left;
-     gap: 10px;
-     font-size: 1.2rem;
-     font-weight: bold;
- }
- 
+}
+
+.sidebar_header>* {
+    align-self: center;
+}
+
+.sidebar_nav {
+    padding-top: 15px;
+}
+
+.sidebar_nav li {
+    margin-left: -20px;
+    display: grid;
+    grid-template-columns: 40px 80px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-items: left;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
 
- /*Header*/
- 
+
+/*Header*/
+
 .header {
     background-color: white;
     display: grid;
@@ -204,13 +205,13 @@ p {font-size: 1rem;
 }
 
 .header_row2 {
-    display:grid;
+    display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
 }
 
 .header_greeting {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 8fr;
     align-items: center;
 }
@@ -238,15 +239,13 @@ p {font-size: 1rem;
     border-radius: 30px;
 }
 
-
-
 .header_bottomnav button a {
     font-weight: bold;
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
- /*Main Content*/
+/*Main Content*/
 
 .main-content {
     background-color: var(--lightgrey);
@@ -264,7 +263,7 @@ p {font-size: 1rem;
 .project_grid {
     display: grid;
     gap: 30px;
-    padding-top:15px;
+    padding-top: 15px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
@@ -278,7 +277,6 @@ p {font-size: 1rem;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(121, 122, 126, 0.411);
 }
-
 
 .card_icons {
     max-width: 100px;
@@ -297,7 +295,7 @@ p {font-size: 1rem;
 
 .annoucement:nth-child(2) {
     border-top: 1px solid grey;
-    border-bottom:1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
 .annoucements h4, .trending h4 {
@@ -312,7 +310,7 @@ p {font-size: 1rem;
     box-shadow: 5px 5px 5px rgba(121, 122, 126, 0.411);
 }
 
-.annoucements_card h4{
+.annoucements_card h4 {
     padding-top: 15px;
 }
 
@@ -332,5 +330,5 @@ p {font-size: 1rem;
 }
 
 .footer a {
-    color:grey;
+    color: grey;
 }
